@@ -5,30 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Filipino Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <style>
+        h1.title {
+            font-family: 'Lobster';
+            font-weight: 400;
+        }
+    </style>
 </head>
-<body class="bg-slate-400">
-    <header class="">
-        <div>
-            <img src="img/menu.png" alt="Just another menu">
-            <nav>
-                <ul>
-                    <li><a href="">Cook now</a></li>
-                    <li><a href="">Get to know us</a></li>
+<body class="bg-white border-red-1px">
+    <header class="fixed flex justify-between p-4 w-screen">
+        <div class="flex items-center space-x-2">
+            <img class="w-8" src="img/menu.png" alt="Just another menu">
+            <nav class="">
+                <ul class=" flex  space-x-2 tracking-tight">
+                    <li class=""><a class="" href="">Cook now</a></li>
+                    <li class=""><a class=""href="">Get to know us</a></li>
                 </ul>
             </nav>
         </div>
-        <h1><a href="">The Filipino Recipes</a></h1>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="">Favorites</a></li>
-                    <li><a href="">Sign in</a></li>
+        <a class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" href=""><h1 class="title text-2xl tracking-wider">The Filipino Recipes</h1></a>
+        <div class="flex items-center space-x-2">
+            <nav class="">
+                <ul class=" flex space-x-2">
+                    <li class=""><a href="">Favorites</a></li>
+                    <li class="tracking-tight"><a href="">Sign in</a></li>
                 </ul>
             </nav>
-            <img src="img/search-button.png" alt="Just another search-button">
+            <img class="w-8" src="img/search-button.png" alt="Just another search-button">
         </div>   
     </header>
+
+    <main class="h-screen"></main>
+    <section class="h-screen border border-red-600"></section>
 </body>
 </html>
