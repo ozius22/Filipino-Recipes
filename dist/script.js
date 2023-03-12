@@ -4,3 +4,10 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
     link.classList.add('active');
   }
 })
+
+
+/*const typing = document.querySelector('#typing');
+
+typing.addEventListener('animationend', () => {
+  typing.classList.add('repeat');
+});*/

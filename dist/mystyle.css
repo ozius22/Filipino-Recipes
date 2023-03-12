@@ -1,0 +1,66 @@
+.active {
+  text-decoration-color: #facc15;
+  text-decoration-thickness: 2px;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+}
+
+.home {
+  height: 36rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/home-rotate.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 86rem;
+}
+
+#typing {
+  color: transparent;
+  font-family: 'Brush Script MT', cursive;
+  font-weight: 600;
+  letter-spacing: 2.8px;
+  font-size: 8em;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: calligraphy 8s forwards;
+  animation-delay: .5s;
+}
+
+@keyframes calligraphy {
+  from {
+    color: white;
+    width: 0;
+    opacity: 0;
+    text-shadow: none;
+  }
+  to {
+    color: white;
+    width: 100%;
+    opacity: 1;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/*#typing.repeat {
+  animation-iteration-count: infinite;
+}*/
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 28rem;
+}
+
+.containee {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
