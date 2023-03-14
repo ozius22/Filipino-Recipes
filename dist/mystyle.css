@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@100;200;300;400;500;600;700&display=swap');
+
 .active {
   text-decoration-color: #facc15;
   text-decoration-thickness: 2px;
@@ -8,37 +10,50 @@
 }
 
 .home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   height: 36rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/home-rotate.jpg);
+  width: 100vw;
+  background-image: linear-gradient(rgba(27, 27, 27, 0.5), rgba(27, 27, 27, 0.5)), url(img/home-rotate.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 86rem;
+  background-size: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #typing {
+  border: 2px;
+  border-color: #facc15;
+  text-align: center;
   color: transparent;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Lobster';
   font-weight: 600;
-  letter-spacing: 2.8px;
   font-size: 8em;
-  overflow: hidden;
   white-space: nowrap;
+
   animation: calligraphy 8s forwards;
   animation-delay: .5s;
 }
 
 @keyframes calligraphy {
   from {
-    color: white;
+    color: #facc15;
     width: 0;
     opacity: 0;
     text-shadow: none;
   }
   to {
-    color: white;
+    color: #facc15;
     width: 100%;
     opacity: 1;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 4px rgba(90, 90, 90, 0.5);
   }
 }
 
@@ -46,21 +61,52 @@
   animation-iteration-count: infinite;
 }*/
 
-.container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 28rem;
-}
-
-.containee {
+#subtitle {
+  opacity: 0;
   color: white;
+  font-weight: 700;
+  font-size: 2rem;
   text-align: center;
+  font-family: "Segoe UI";
+
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 4.5s; 
+  animation-fill-mode: forwards;
 }
 
+@keyframes fade-in {  
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+#button {
+  opacity: 0;
+	font-family: system-ui;
+	text-decoration: none;
+	font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+	background-color: #facc15;
+	color: rgba(24, 24, 24, 0.959);
+	padding: 15px 27px;
+	border-radius: 4rem;
+  box-shadow: 4px 4px 8px rgb(150, 150, 150);
 
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 5s; 
+  animation-fill-mode: forwards;
+}
 
-
+#button:hover {
+  background-color: #dbb312;
+	color: rgba(0, 0, 0, 0.959);
+  transition: 150ms;
+}
 
 
