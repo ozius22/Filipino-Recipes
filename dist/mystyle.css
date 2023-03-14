@@ -85,17 +85,16 @@
 }
 
 #button {
+  font-size: 1.75rem;
+  line-height: 1.25rem;
   opacity: 0;
 	font-family: system-ui;
 	text-decoration: none;
 	font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 1px;
-	background-color: #facc15;
-	color: rgba(24, 24, 24, 0.959);
-	padding: 15px 27px;
-	border-radius: 4rem;
-  box-shadow: 4px 4px 8px rgb(150, 150, 150);
+	background-color: #ffffff;
+	color: rgb(77, 82, 92);
+	padding: 28px 56px;
+	border-radius: 1rem;
 
   animation-name: fade-in;
   animation-duration: 2s;
@@ -104,8 +103,8 @@
 }
 
 #button:hover {
-  background-color: #dbb312;
-	color: rgba(0, 0, 0, 0.959);
+  background-color: #facc15;
+	color: black;
   transition: 150ms;
 }
 
