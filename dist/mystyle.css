@@ -9,7 +9,16 @@
   --tw-text-opacity: 1;
 }
 
+.active1 {
+  font-weight: bold;
+  text-decoration-color: #facc15;
+  text-decoration-thickness: 1px;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
 .home {
+  margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,7 +44,7 @@
   color: transparent;
   font-family: 'Lobster';
   font-weight: 600;
-  font-size: 8em;
+  font-size: 6rem;
   white-space: nowrap;
 
   animation: calligraphy 8s forwards;
@@ -57,21 +66,23 @@
   }
 }
 
-/*#typing.repeat {
+/*
+#typing.repeat {
   animation-iteration-count: infinite;
-}*/
+}
+*/
 
 #subtitle {
   opacity: 0;
   color: white;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   font-family: "Segoe UI";
 
   animation-name: fade-in;
   animation-duration: 2s;
-  animation-delay: 4.5s; 
+  animation-delay: 2s; 
   animation-fill-mode: forwards;
 }
 
@@ -85,27 +96,28 @@
 }
 
 #button {
-  font-size: 1.75rem;
+  font-size: .87rem;
   line-height: 1.25rem;
   opacity: 0;
 	font-family: system-ui;
 	text-decoration: none;
 	font-weight: 700;
 	background-color: #ffffff;
-	color: rgb(77, 82, 92);
-	padding: 28px 56px;
+	color: rgb(44, 47, 53);
+	padding: 14px 28px;
 	border-radius: 1rem;
 
   animation-name: fade-in;
   animation-duration: 2s;
-  animation-delay: 5s; 
+  animation-delay: 3s; 
   animation-fill-mode: forwards;
 }
 
 #button:hover {
   background-color: #facc15;
 	color: black;
-  transition: 150ms;
+  transition-delay: 75ms;
+  transition-duration: 1s;
 }
 
 
