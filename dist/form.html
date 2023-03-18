@@ -10,26 +10,25 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="fixed flex justify-between p-4 px-8 w-screen">
-    <div class="flex items-center space-x-2">
-        <img class="w-8 opacity-50" src="img/menu.png" alt="Just another menu">
-        <nav class="text-sm">
-            <ul class="flex space-x-2 font-bold text-gray-500 underline-offset-4 transition-all">
-                <li class="hover:text-yellow-600 transition-all"><a class="after:underline"href="Recipes.html">Cook now</a></li>
-                <li class="hover:text-yellow-600 transition-all"><a class=""href="about.html">Get to know me </a></li>
-            </ul>
-        </nav>
-    </div>
-    <nav class="title text-2xl font-bold tracking-wider text-yellow-500 hover:text-yellow-400 transition-all"><a class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" href="index.html">The Filipino Cuisine</a></nav>
-    <div class="flex items-center space-x-2">
-        <nav class="text-sm">
-            <ul class=" flex space-x-2 font-bold text-gray-500 underline-offset-4 transition-all">
-                <li class="hover:text-yellow-600 transition-all cursor-pointer">Favorites</li>
-                <li class=""><a href="form.html">Sign in</a></li>
-            </ul>
-        </nav>
-        <img class="w-8 opacity-50" src="img/search-button.png" alt="Just another search-button">
-    </div>   
-</header>
+    <section class="lg:h-full xl:items-start m-12 lg:m-0 flex justify-center items-center">
+        <img class="hidden lg:block w-1/2 h-fit" src="img/home.jpg" alt="photo">
+        <div class="xl:mt-24 justify-self-start lg:w-1/2 lg:m-16">
+            <div class="flex flex-col">
+                <a class="text-lg mb-12 sm:w-56 md:w-64 sm:text-2xl font-bold tracking-normal text-yellow-500 hover:text-yellow-400 transition-all py-4" href="index.html">The Filipino Cuisine</a> 
+                <h1 class="text-gray-800 text-2xl font-extrabold">Sign in or create an account</h1>
+            </div>
+            <form class="lg:w-3/4 mt-12">
+                <label class="text-sm block mb-2" for="name">Name</label>
+                <input class="w-full px-3 py-2 border border-gray-800 rounded-full" type="text" id="name"required>
+                <label class="text-sm block mb-2" for="email">Email adress</label>
+                <input class="w-full px-3 py-2 border border-gray-800 rounded-full" type="text" id="email"required>
+                <label class="text-sm block mb-2" for="question">Password</label>
+                <input class="w-full px-3 py-2 border border-gray-800 rounded-full" type="text" id="pass"required>
+                <button class="mt-4 bg-blue-white border border-yellow-400 font-bold text-gray-800 py-2 px-4 rounded-full hover:bg-yellow-400 hover:text-black hover:border-white transition-all" type="submit">Submit</button>
+              </form>
+        </div>
+        
+    </section>
+    
 </body>
 </html>

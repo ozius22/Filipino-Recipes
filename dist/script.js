@@ -11,6 +11,8 @@ const footLinks = document.querySelectorAll('footer a').forEach(link => {
   }
 })
 
+
+
 /*
 const typing = document.querySelector('#typing');
 

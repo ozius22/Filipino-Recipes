@@ -4,12 +4,13 @@
   text-decoration-color: #facc15;
   text-decoration-thickness: 2px;
   text-decoration-line: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 8px;
   color: rgb(17 24 39 / var(--tw-text-opacity));
   --tw-text-opacity: 1;
 }
 
 .active1 {
+  color: yellow;
   font-weight: bold;
   text-decoration-color: #facc15;
   text-decoration-thickness: 1px;
@@ -17,71 +18,35 @@
   text-underline-offset: 2px;
 }
 
-.home {
-  margin-top: 64px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 36rem;
-  width: 100vw;
-  background-image: linear-gradient(rgba(27, 27, 27, 0.5), rgba(27, 27, 27, 0.5)), url(img/home-rotate.jpg);
+#container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/home-rotate.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100vw;
+  background-size: cover;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#typing {
-  border: 2px;
-  border-color: #facc15;
-  text-align: center;
-  color: transparent;
+#title {
   font-family: 'Lobster';
-  font-weight: 600;
-  font-size: 6rem;
-  white-space: nowrap;
+  opacity: 0;
 
-  animation: calligraphy 8s forwards;
+  animation: fade-in 6s forwards;
   animation-delay: .5s;
 }
 
-@keyframes calligraphy {
-  from {
-    color: #facc15;
-    width: 0;
-    opacity: 0;
-    text-shadow: none;
-  }
-  to {
-    color: #facc15;
-    width: 100%;
-    opacity: 1;
-    text-shadow: 0 0 4px rgba(90, 90, 90, 0.5);
-  }
-}
-
-/*
-#typing.repeat {
-  animation-iteration-count: infinite;
-}
-*/
-
 #subtitle {
   opacity: 0;
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
-  text-align: center;
-  font-family: "Segoe UI";
 
   animation-name: fade-in;
-  animation-duration: 2s;
+  animation-duration: 3s;
+  animation-delay: 1s; 
+  animation-fill-mode: forwards;
+}
+
+#button {
+  font-family: system-ui;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
   animation-delay: 2s; 
   animation-fill-mode: forwards;
 }
@@ -95,29 +60,12 @@
   }
 }
 
-#button {
-  font-size: .87rem;
-  line-height: 1.25rem;
-  opacity: 0;
-	font-family: system-ui;
-	text-decoration: none;
-	font-weight: 700;
-	background-color: #ffffff;
-	color: rgb(44, 47, 53);
-	padding: 14px 28px;
-	border-radius: 1rem;
+.swiper {
+  width: 80%;
+  height: fit-content;
+} 
 
-  animation-name: fade-in;
-  animation-duration: 2s;
-  animation-delay: 3s; 
-  animation-fill-mode: forwards;
+.swiper-slide img {
+  width: 100%;
+
 }
-
-#button:hover {
-  background-color: #facc15;
-	color: black;
-  transition-delay: 75ms;
-  transition-duration: 1s;
-}
-
-
