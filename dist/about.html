@@ -10,8 +10,72 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
-    <div><br><br><br><br><br><br><br></div>
+    <header class="md:justify-between sm:justify-center fixed top-0 left-0 flex px-8 w-screen bg-white z-10 justify-center">
+        <div class="sm:flex items-center gap-2">
+            <img class="hidden absolute left-0 ml-8 md:static md:ml-0 w-8 opacity-50 cursor-pointer hover:opacity-100 py-4" src="img/menu.png" alt="Just another menu">
+            <nav class="sm:hidden md:flex hidden text-sm">
+                <ul class="flex gap-2 font-bold text-gray-500 underline-offset-4 transition-all">
+                    <li class="decoration-yellow-400 decoration-2 hover:text-gray-900 transition-all hover:underline"><a class="py-4" href="Recipes.html">Cook now</a></li>
+                    <li class="decoration-yellow-400 decoration-2 hover:text-gray-900 transition-all hover:underline"><a class="py-4" class=""href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a class="text-xl sm:text-2xl font-bold tracking-wider text-yellow-500 hover:text-yellow-400 transition-all py-4" href="index.html">The Filipino Cuisine</a>
+        <div class="sm:flex items-center gap-2 hidden">
+            <nav class="sm:hidden md:flex text-sm">
+                <ul class=" flex gap-2 font-bold text-gray-500 underline-offset-4 transition-all">
+                    <li class="decoration-yellow-400 decoration-2 hover:text-gray-900 transition-all hover:underline py-4"><a class="py-4" href="form.html">Sign in</a></li>
+                </ul>
+            </nav>
+            <img class="md:block hidden w-8 opacity-50 cursor-pointer hover:opacity-100 py-4" src="img/search-button.png" alt="Just another search-button">
+        </div>   
+    </header>
+
+    <main class="flex mt-16 justify-between">
+        <div class="w-screen max-w-7xl xl:max-w-full pl-8 pr-8">
+            <section class="">
+                <div class="">
+                    <h1 class="mb-8 text-4xl lg:text-6xl tracking-wider text-gray-800" id="title">About the Website</h1">
+                    <p class="text-sm lg:text-left lg:text-lg font-sans" id="subtitle">"Get ready to savor the flavors! My recipe collection is a culinary adventure you won't want to miss. Learn more about me and my passion for cooking up a storm."</p>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="">
+                    <h1 class="mb-8 text-4xl lg:text-6xl tracking-wider text-gray-800" id="title">Preperation</h1">
+                    <p class="text-sm lg:text-left lg:text-lg font-sans xl:max-w-full" id="subtitle">My project is a requirement for my Web Programming class, but it's also an opportunity for me to showcase my passion for design and creativity. As an aspiring designer, I'm excited to use this project as a platform to hone my skills and bring my ideas to life. Join me on this journey as I bring my vision to the web.</p>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="">
+                    <h1 class="mb-8 text-4xl lg:text-6xl tracking-wider text-gray-800" id="title">The Recipes</h1">
+                    <p class="text-sm lg:text-left lg:text-lg font-sans xl:max-w-full" id="subtitle">Filipino food is a celebration of flavors, textures, and ingredients that reflect the diversity of the Philippines and its people. And as the world becomes increasingly connected through social media, Filipino food has found a new platform to share its love and richness with the world. It's a way to connect with the culture and heritage. Food is more than just sustenance. It's a way for us to connect with our roots and identity. When we share our food, we share a part of ourselves and our culture. This is particularly important for the Filipino diaspora, who may have left their homeland and struggle to maintain a sense of connection with their culture. By cooking and sharing Filipino food, we are keeping our culture alive and passing it on to the next generation.
+        
+                        But Filipino food is not just for Filipinos. It's a cuisine that has something to offer everyone, from savory adobo to sweet halo-halo. Filipino food is a celebration of flavors and textures that reflect the country's rich history and diverse influences, from Spanish to Chinese to Malay. It's a cuisine that is constantly evolving, but never losing its unique identity. </p>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="">
+                    <h1 class="mb-8 text-4xl lg:text-6xl tracking-wider text-gray-800" id="title">Social Media</h1">
+                    <p class="text-sm lg:text-left lg:text-lg font-sans xl:max-w-full" id="subtitle">Social media has played a significant role in the recent popularity of Filipino food. Platforms like Instagram and YouTube have given Filipino chefs, home cooks, and food bloggers a platform to showcase their talents and share their love for Filipino cuisine with the world. With beautiful food photography, easy-to-follow recipes, and engaging storytelling, social media has made Filipino food accessible and appealing to a global audience.
+        
+                        In addition to spreading awareness about Filipino food, social media has also become a tool for cultural exchange and education. Through food, people can learn about the history, traditions, and customs of the Philippines. They can gain a better understanding of the country's diversity and complexity, and how it is reflected in its food.</p>
+                </div>
+            </section>
+        </div>
+        <div class="hidden lg:block w-screen max-w-full h-auto">
+            <img src="img/home.jpg" alt="">
+            <img src="img/cooking.jpg" alt="">
+            <img src="img/tinola.jpg" alt="">
+            <img src="img/dinuguan.jpg" alt="">
+            <img src="img/sisig.jpg" alt="">
+            <img src="img/adoboI.jpg" alt="">
+
+        </div>
+    </main>
+
     <footer class="px-8 py-4 flex flex-col-reverse lg:flex-row items-center lg:items-baseline justify-between lg:justify-between w-screen bg-yellow-800 text-gray-200">
         <div class="mt-4 lg:mt-0 text-xs flex justify-center lg:justify-start w-1/4">
             <ul>
@@ -29,7 +93,7 @@
                 <li><a href="form.html">Sign in</a></li>
             </ul>
         </div>
-  
+
         <div class="w-3/4 text-center text-xs">
             <span class="hidden md:flex md:flex-col mb-4">
                 <h6 class="leading-8 font-bold">Disclaimer</h6>
@@ -42,7 +106,7 @@
             <br>
             <p>© Copyright 2023 Luis Suizo</p>
         </div>
-  
+
         <div class="hidden text-xs w-1/4 lg:flex flex-col items-end" id="contacts">
             <h6 class="leading-8 font-bold">Contact</h6>
             <p><a href="mailto:Lsuizo72@gmail.com">Lsuizo72@gmail.com</a></p>

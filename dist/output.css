@@ -624,6 +624,26 @@ video {
   margin-top: 1rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -644,13 +664,17 @@ video {
   height: 24rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-1\/2 {
@@ -685,8 +709,12 @@ video {
   width: 50%;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .cursor-pointer {
@@ -703,10 +731,6 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-end {
@@ -743,10 +767,6 @@ video {
   scroll-behavior: smooth;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -769,16 +789,6 @@ video {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
-.border-yellow-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(133 77 14 / var(--tw-border-opacity));
-}
-
 .border-yellow-400 {
   --tw-border-opacity: 1;
   border-color: rgb(250 204 21 / var(--tw-border-opacity));
@@ -789,11 +799,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -802,18 +807,6 @@ video {
 .bg-yellow-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
-}
-
-.bg-\[img\/home\.jpg\] {
-  background-color: img/home.jpg;
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .object-cover {
@@ -874,6 +867,26 @@ video {
   padding-top: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -926,6 +939,11 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -950,16 +968,20 @@ video {
   line-height: 2rem;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
 }
 
 .tracking-wide {
   letter-spacing: 0.025em;
-}
-
-.tracking-normal {
-  letter-spacing: 0em;
 }
 
 .text-black {
@@ -985,11 +1007,6 @@ video {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-yellow-500 {
@@ -1032,10 +1049,6 @@ video {
   transition-duration: 150ms;
 }
 
-.hover\:border-none:hover {
-  border-style: none;
-}
-
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -1043,11 +1056,6 @@ video {
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.hover\:bg-blue-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-yellow-400:hover {
@@ -1159,6 +1167,10 @@ video {
     justify-content: space-between;
   }
 
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .md\:text-center {
     text-align: center;
   }
@@ -1166,6 +1178,11 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1178,16 +1195,24 @@ video {
     margin: 4rem;
   }
 
-  .lg\:ml-12 {
-    margin-left: 3rem;
-  }
-
   .lg\:mr-8 {
     margin-right: 2rem;
   }
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .lg\:mt-32 {
+    margin-top: 8rem;
   }
 
   .lg\:block {
@@ -1202,11 +1227,15 @@ video {
     height: 100%;
   }
 
-  .lg\:w-2\/4 {
-    width: 50%;
+  .lg\:h-96 {
+    height: 24rem;
   }
 
   .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-2\/4 {
     width: 50%;
   }
 
@@ -1214,8 +1243,20 @@ video {
     width: 75%;
   }
 
+  .lg\:w-screen {
+    width: 100vw;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:items-baseline {
@@ -1226,12 +1267,16 @@ video {
     justify-content: flex-start;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
 
-  .lg\:justify-self-center {
-    justify-self: center;
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-8xl {
@@ -1249,6 +1294,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:font-bold {
     font-weight: 700;
   }
@@ -1260,10 +1310,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:m-24 {
-    margin: 6rem;
-  }
-
   .xl\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -1272,32 +1318,84 @@ video {
     margin-bottom: 8rem;
   }
 
-  .xl\:mt-0 {
-    margin-top: 0px;
-  }
-
   .xl\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:inline-block {
+    display: inline-block;
+  }
+
+  .xl\:inline {
+    display: inline;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:h-96 {
     height: 24rem;
   }
 
-  .xl\:h-3\/4 {
-    height: 75%;
+  .xl\:h-full {
+    height: 100%;
+  }
+
+  .xl\:w-52 {
+    width: 13rem;
+  }
+
+  .xl\:w-96 {
+    width: 24rem;
+  }
+
+  .xl\:w-60 {
+    width: 15rem;
+  }
+
+  .xl\:w-3\/4 {
+    width: 75%;
   }
 
   .xl\:items-start {
     align-items: flex-start;
   }
 
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:gap-4 {
     gap: 1rem;
   }
 
+  .xl\:border-0 {
+    border-width: 0px;
+  }
+
+  .xl\:border-transparent {
+    border-color: transparent;
+  }
+
   .xl\:p-8 {
     padding: 2rem;
+  }
+
+  .xl\:p-0 {
+    padding: 0px;
   }
 
   .xl\:text-base {
