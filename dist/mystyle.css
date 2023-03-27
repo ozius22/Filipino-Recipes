@@ -72,4 +72,8 @@
   #texts {
     color: white !important;
   }
+
+  input {
+    color: black;
+  }
 }
