@@ -60,16 +60,6 @@
   }
 }
 
-.swiper {
-  width: 80%;
-  height: fit-content;
-} 
-
-.swiper-slide img {
-  width: 100%;
-
-}
-
 @media screen and (max-width: 1023px) {
   #bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/home.jpg);
